@@ -1,0 +1,1005 @@
+.GraphDiv {
+  margin: 5vw 0 0 5vw;
+}
+
+.DashboardTitle {
+  background-color: black;
+  color: white;
+  padding-left: 2vw;
+  margin-bottom: -1.8vw;
+  padding-top: 6vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border-radius: 12px;
+  padding: 20px;
+  color: #ffffff;
+  margin: 20px auto;
+  width: 98.9999vw;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0.5vw;
+  padding: 1vw;
+  border-radius: 0.5vw;
+  height: 25vh;
+  width: 14vw;
+  background-color: #1f2029;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.icon {
+  width: 3vw;
+}
+
+.title {
+  font-size: 0.8vw;
+  margin-top: 2vh;
+}
+
+.number {
+  font-size: 1.2vw;
+  margin-top: 1.8vh;
+}
+
+.decrease {
+  font-size: 1vw;
+  margin-left: 6.5vw;
+  color: red;
+}
+
+.increase {
+  font-size: 1vw;
+  margin-left: 6.5vw;
+  color: green;
+}
+
+.textContainer,
+.circleContainer {
+  background-color: #1f2029;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.textContainer {
+  color: white;
+  height: 11vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: -3vw;
+  margin-right: 10vw;
+}
+
+.textContainer p {
+  position: relative;
+  top: -1vw;
+  margin: 0;
+  font-size: 0.81vw !important;
+  font-weight: bold;
+}
+
+.textContainer h1 {
+  margin: 2vh 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.textContainer p.green {
+  margin: 3.5vh 0 0 0;
+  color: green;
+  font-size: 1.1vw !important;
+}
+
+.circleContainer {
+  position: relative;
+  width: 5vw;
+  margin-left: -4vw;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.1vw;
+}
+
+.circleContainer svg {
+  transform: rotate(-90deg);
+  overflow: visible;
+  height: 8vw;
+}
+
+.progressCircle {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.completedCircle {
+  transition: stroke-dashoffset 0.5s ease;
+  transform-origin: 50% 50%;
+}
+.progressText {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.progressText span {
+  font-size: 0.5vw;
+  display: block;
+  margin-top: -0.2em;
+}
+
+.footerContainer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerText {
+  position: relative; /* Adjust position within the container */
+  top: 7vh; /* Move the text down inside the container */
+  left: 6vw;
+  text-align: center;
+  color: white;
+  font-size: 0.55vw !important;
+  background-color: #1f2029;
+  padding: 0;
+}
+
+.combinedContainer {
+  background-color: #1f2029;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 26vw;
+  height: 25vh;
+  margin: 0px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.combinedContainer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -3vh;
+}
+
+/* Small devices (phones, 320px to 480px) */
+@media (min-width:320px) and (max-width: 480px) {
+    .GraphDiv {
+      margin: 6vw 0 0 12vw;
+    }
+  
+    .DashboardTitle {
+      padding-left: 4vw;
+      padding-top: 15vw;
+      margin-bottom: -2vw;
+    }
+  
+    .container {
+      padding: 10px;
+      width: 100vw;
+    }
+  
+    .card {
+      margin: 1vw;
+      padding: 2vw;
+      height: auto;
+      width: 80vw;
+      font-size: 4vw;
+    }
+  
+    .icon {
+      width: 10vw;
+    }
+  
+    .title {
+      font-size: 4vw;
+    }
+  
+    .number {
+      font-size: 5vw;
+    }
+  
+    .decrease,
+    .increase {
+      font-size: 3.5vw;
+      margin-left: 0;
+    }
+  
+    .textContainer {
+      margin-left: -40vw;
+      margin-right: 0;
+      height: 25vw;
+      margin-top: 8vw;
+    }
+  
+    .textContainer p {
+      font-size: 4vw !important;
+    }
+  
+    .textContainer h1 {
+      font-size: 6vw;
+    }
+  
+    .circleContainer {
+      width: 20vw;
+      height: 05vw;
+      top: -25vw;
+      margin-left: 30vw;
+    }
+  
+    .circleContainer svg {
+      height: 30vw;
+    }
+  
+    .progressText {
+      font-size: 5vw;
+      margin-top: 2vw;
+    }
+  
+    .progressText span {
+      font-size: 2vw;
+      display: block;
+      margin-top: -0.2em;
+    }
+  
+    .footerText {
+      font-size: 2vw !important;
+      left: 15vw;
+      top: -2vw;
+    }
+  
+    .combinedContainer {
+      width: 80vw;
+      height: 50vw;
+      margin: 2vw 0;
+      margin-left: 1vw;
+      border-radius: 1vw;
+    }
+  
+    .combinedContainer p {
+      font-size: 3.5vw;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .textContainer p.green {
+      margin: 3.5vw 0 0 0;
+      color: green;
+      font-size: 3vw !important;
+    }
+  }
+
+
+/* Small devices (phones, 320px to 480px) */
+@media (min-width:480px)and (max-width: 481px) {
+  .GraphDiv {
+    margin: 12vw 0 0 12vw;
+  }
+
+  .DashboardTitle {
+    padding-left: 4vw;
+    padding-top: 5vw;
+    margin-bottom: -2vw;
+  }
+
+  .container {
+    padding: 10px;
+    width: 100vw;
+  }
+
+  .card {
+    margin: 1vw;
+    padding: 2vw;
+    height: auto;
+    width: 80vw;
+    font-size: 4vw;
+  }
+
+  .icon {
+    width: 6vw;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .number {
+    font-size: 5vw;
+  }
+
+  .decrease,
+  .increase {
+    font-size: 3.5vw;
+    margin-left: 0;
+  }
+
+  .textContainer {
+    margin-left: -40vw;
+    margin-right: 0;
+    height: 10vw;
+    margin-top: 8vw;
+  }
+
+  .textContainer p {
+    font-size: 4vw !important;
+  }
+
+  .textContainer h1 {
+    font-size: 6vw;
+  }
+
+  .circleContainer {
+    width: 20vw;
+    height: 05vw;
+    top: -10vw;
+    margin-left: 30vw;
+  }
+
+  .circleContainer svg {
+    height: 30vw;
+  }
+
+  .progressText {
+    font-size: 5vw;
+    margin-top: 2vw;
+  }
+
+  .progressText span {
+    font-size: 2vw;
+    display: block;
+    margin-top: -0.2em;
+  }
+
+  .footerText {
+    font-size: 2vw !important;
+    left: 15vw;
+    top: 1vw;
+  }
+
+  .combinedContainer {
+    width: 80vw;
+    height: 50vw;
+    margin: 2vw 0;
+    margin-left: 1vw;
+    border-radius: 1vw;
+  }
+
+  .combinedContainer p {
+    font-size: 3.5vw;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .textContainer p.green {
+    margin: 3.5vw 0 0 0;
+    color: green;
+    font-size: 3vw !important;
+  }
+}
+
+/* Medium devices (tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .GraphDiv {
+        margin: 8vw 0 0 8vw;
+        padding-top: 2vw;
+      }
+    
+      .DashboardTitle {
+        padding-left: 4vw;
+        padding-top: 4vw;
+        margin-bottom: -2vw;
+      }
+    
+      .container {
+        padding: 10px;
+        width: 100vw;
+      }
+    
+      .card {
+        margin: 1vw;
+        padding: 2vw;
+        height: 30vw;
+        width: 42vw;
+        font-size: 4vw;
+      }
+    
+      .icon {
+        width: 6vw;
+      }
+    
+      .title {
+        font-size: 4vw;
+      }
+    
+      .number {
+        font-size: 5vw;
+      }
+    
+      .decrease,
+      .increase {
+        font-size: 3.5vw;
+        margin-left: 0;
+      }
+    
+      .textContainer {
+        margin-left: -40vw;
+        margin-right: 0;
+        height: 10vw;
+        margin-top: 8vw;
+      }
+    
+      .textContainer p {
+        font-size: 4vw !important;
+      }
+    
+      .textContainer h1 {
+        font-size: 4vw;
+      }
+    
+      .circleContainer {
+        width: 20vw;
+        height: 05vw;
+        top: -10vw;
+        margin-left: 30vw;
+      }
+    
+      .circleContainer svg {
+        height: 30vw;
+      }
+    
+      .progressText {
+        font-size: 5vw;
+        margin-top: 2vw;
+      }
+    
+      .progressText span {
+        font-size: 2vw;
+        display: block;
+        margin-top: -0.2em;
+      }
+    
+      .footerText {
+        font-size: 2vw !important;
+        left: 15vw;
+        top: 10vw;
+      }
+    
+      .combinedContainer {
+        width: 86vw;
+        height: 40vw;
+        margin: 2vw 0;
+        margin-left: .8vw;
+        border-radius: 1vw;
+      }
+    
+      .combinedContainer p {
+        font-size: 3.5vw;
+      }
+    
+      .content {
+        flex-direction: column;
+      }
+    
+      .textContainer p.green {
+        margin: 3.5vw 0 0 0;
+        color: green;
+        font-size: 3vw !important;
+      }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 769px) and (max-width:1024px) {
+  .GraphDiv {
+    margin: 5vw 0 0 5vw;
+    padding-top: 2vw;
+  }
+
+  .DashboardTitle {
+    padding-left: 2vw;
+    padding-top: 4vw;
+    margin-bottom: -1.8vw;
+  }
+
+  .container {
+    padding: 20px;
+    width: 98.9999vw;
+  }
+
+  .card {
+    margin: 0.5vw;
+    padding: 1vw;
+    height: 15vw;
+    width: 14vw;
+  }
+
+  .icon {
+    width: 3vw;
+  }
+
+  .title {
+    font-size: 0.8vw;
+  }
+
+  .number {
+    font-size: 1.2vw;
+  }
+
+  .decrease,
+  .increase {
+    font-size: 1vw;
+  }
+
+  .textContainer {
+    height: 4vh;
+    margin-left: -3vw;
+    margin-right: 10vw;
+  }
+
+  .textContainer p{
+    font-size: 1vw !important;
+  }
+
+  .textContainer h1 {
+    font-size: 1.8vw !important;
+  }
+
+  .circleContainer {
+    width: 5vw;
+    height: 6vw;
+    margin-left: -6vw;
+    margin-top: 2vh;
+  }
+
+  .circleContainer svg {
+    height: 10vw;
+  }
+
+  .progressText {
+    font-size: 1.2em;
+  }
+
+  .footerText {
+    font-size: 0.55vw !important;
+    top: 5vw;
+    left: 6.5 vw;
+  }
+
+  .combinedContainer {
+    width: 26vw;
+    height: 15vw;
+    border-radius: .5vw;
+    margin: 0 0 0 40px;
+  }
+
+  .combinedContainer p {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+
+  .textContainer p.green {
+    margin: 1vw 0 0 0;
+    color: green;
+    font-size: 1.5vw !important;
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 1024px) and (max-width:1293px) {
+  .GraphDiv {
+    margin: 5vw 0 0 5.5vw;
+  }
+
+  .DashboardTitle {
+    padding-left: 2vw;
+    padding-top: 4vw;
+    margin-bottom: -1.8vw;
+  }
+
+  .container {
+    padding: 20px;
+    width: 98.9999vw;
+  }
+
+  .card {
+    margin: 0.5vw;
+    padding: 1vw;
+    height: 15vw;
+    width: 14vw;
+  }
+
+  .icon {
+    width: 3vw;
+  }
+
+  .title {
+    font-size: 1.5vw;
+  }
+
+  .number {
+    font-size: 1.2vw;
+  }
+
+  .decrease,
+  .increase {
+    font-size: 1vw;
+  }
+
+  .textContainer {
+    margin-left: -3vw;
+    margin-right: 10vw;
+  }
+
+  .textContainer p{
+    font-size: 1vw !important;
+  }
+
+  .textContainer h1 {
+    font-size: 1.8vw !important;
+  }
+
+  .circleContainer {
+    width: 5vw;
+    height: 8.5vw;
+    margin-left: -6vw;
+    padding-top: 1vw;
+  }
+
+  .circleContainer svg {
+    height: 10vw;
+  }
+
+  .progressText {
+    font-size: 1.2em;
+    margin-top: -1vw;
+  }
+
+  .progressText span{
+    font-size: .8vw;
+  }
+
+  .footerText {
+    font-size: .6vw !important;
+    top: 3vw;
+    left: 6vw;
+  }
+
+  .combinedContainer {
+    width: 26vw;
+    height: 15vw;
+    border-radius: .5vw;
+    margin: 0 0 0 40px;
+  }
+
+  .combinedContainer p {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+  .textContainer p.green {
+    margin: 2vw 0 0 0;
+    color: green;
+    font-size: 1.2vw !important;
+  }
+}
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 1293px) and (max-width:1440px) {
+  .GraphDiv {
+    margin: 2vw 0 0 5.5vw;
+  }
+
+  .DashboardTitle {
+    padding-left: 2vw;
+    padding-top: 4vw;
+    margin-bottom: -1.8vw;
+  }
+
+  .container {
+    padding: 20px;
+    width: 98.9999vw;
+  }
+
+  .card {
+    margin: 0.5vw;
+    padding: 1vw;
+    height: 15vw;
+    width: 14vw;
+  }
+
+  .icon {
+    width: 3vw;
+  }
+
+  .title {
+    font-size: 1.5vw;
+  }
+
+  .number {
+    font-size: 1.2vw;
+  }
+
+  .decrease,
+  .increase {
+    font-size: 1vw;
+  }
+
+  .textContainer {
+    margin-left: -3vw;
+    margin-right: 10vw;
+  }
+
+  .textContainer p{
+    font-size: 1vw !important;
+  }
+
+  .textContainer h1 {
+    font-size: 1.8vw !important;
+  }
+
+  .circleContainer {
+    width: 5vw;
+    height: 8.5vw;
+    margin-left: -6vw;
+    padding-top: 1vw;
+  }
+
+  .circleContainer svg {
+    height: 10vw;
+  }
+
+  .progressText {
+    font-size: 1.2em;
+    margin-top: -1vw;
+  }
+
+  .progressText span{
+    font-size: .8vw;
+  }
+
+  .footerText {
+    font-size: .6vw !important;
+    top: 3vw;
+    left: 6vw;
+  }
+
+  .combinedContainer {
+    width: 26vw;
+    height: 15vw;
+    border-radius: .5vw;
+    margin: 0 0 0 40px;
+  }
+
+  .combinedContainer p {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+  .textContainer p.green {
+    margin: 2vw 0 0 0;
+    color: green;
+    font-size: 1.2vw !important;
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 1440px) and (max-width:2559px) {
+  .GraphDiv {
+    margin: .5vw 0 0 5vw;
+  }
+
+  .DashboardTitle {
+    padding-left: 2vw;
+    padding-top: 6vw;
+    margin-bottom: -1.8vw;
+  }
+
+  .container {
+    padding: 20px;
+    width: 98.9999vw;
+  }
+
+  .card {
+    margin: 0.5vw;
+    padding: 1vw;
+    height: 12vw;
+    width: 14vw;
+  }
+
+  .icon {
+    width: 4vw;
+  }
+
+  .title {
+    font-size: 1vw;
+  }
+
+  .number {
+    font-size: 1.2vw;
+  }
+
+  .decrease,
+  .increase {
+    font-size: 1vw;
+  }
+
+  .textContainer {
+    margin-left: -3vw;
+    margin-right: 10vw;
+  }
+
+  .textContainer p{
+    font-size: 1vw;
+  }
+
+  .textContainer h1 {
+    font-size: 2vw !important;
+  }
+
+  .circleContainer {
+    width: 5vw;
+    height: 8vw;
+    margin-left: -6vw;
+    
+  }
+
+  .circleContainer svg {
+    height: 8vw;
+    margin-top: -2vw;
+  }
+
+  .progressText {
+    font-size: 1.2vw;
+    margin-top: -1.5vw;
+  }
+
+  .progressText span{
+    font-size: .6vw;
+  }
+
+  .footerText {
+    font-size: .7vw !important;
+    left: 5.5vw;
+    top: 1vw;
+  }
+
+  .combinedContainer {
+    width: 26vw;
+    height: 12vw;
+    margin: 0 0 0 40px;
+    border-radius: .5vw !important;
+  }
+
+  .combinedContainer p {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: 2560px) {
+    .GraphDiv {
+      margin: 5vw 0 0 5vw;
+    }
+  
+    .DashboardTitle {
+      padding-left: 2vw;
+      padding-top: 6vh;
+      margin-bottom: -1.8vw;
+    }
+  
+    .container {
+      padding: 20px;
+      width: 98.9999vw;
+    }
+  
+    .card {
+      margin: 0.5vw;
+      padding: 1vw;
+      height: 10vw;
+      width: 14vw;
+    }
+  
+    .icon {
+      width: 3vw;
+    }
+  
+    .title {
+      font-size: 0.8vw;
+    }
+  
+    .number {
+      font-size: 1.2vw;
+    }
+  
+    .decrease,
+    .increase {
+      font-size: 1vw;
+    }
+  
+    .textContainer {
+      margin-left: -3vw;
+      margin-right: 10vw;
+    }
+  
+    .textContainer p{
+        font-size: 1vw !important;
+    }
+    .textContainer h1 {
+      font-size: 2vw !important;
+    }
+  
+    .circleContainer {
+      width: 5vw;
+      height: 12vh;
+      margin-left: -4vw;
+    }
+  
+    .circleContainer svg {
+      height: 8vw;
+    }
+  
+    .progressText {
+      font-size: 1.2vw;
+    }
+  
+    .progressText span{
+      font-size: .6vw;
+    }
+  
+    .footerText {
+      font-size: .6vw !important;
+      left: 6vw;
+      top: 4vw;
+    }
+  
+    .combinedContainer {
+      width: 26vw;
+      height: 10vw;
+      margin: 0 0 0 4vw;
+      border-radius: .5vw !important;
+    }
+  
+    .combinedContainer p {
+      font-size: 1rem;
+    }
+  
+    .content {
+      flex-direction: row;
+    }
+  }
+  

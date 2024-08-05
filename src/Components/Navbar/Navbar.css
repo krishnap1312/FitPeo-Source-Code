@@ -1,0 +1,314 @@
+/* Base Styles */
+.NavbarDiv {
+    background-color: #1f2029;
+    display: flex;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.NavbarDivs {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.NavbarDivs img {
+    height: 40px;
+    margin-left: 1vw;
+}
+
+.NavbarDivs input {
+    height: 5vh;
+    padding: 0 2vw 0 2.5vw;
+    border-radius: 0.5vw;
+    border: 1px solid #ccc;
+    background-color: #292b2f;
+    color: #fff;
+    width: 100vw;
+    margin-left: 2.6vw;
+    max-width: 380px;
+    transition: width 0.3s ease;
+}
+
+.NavbarDivs .bi-search {
+    font-size: 1.2vw;
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.NavbarRightDivs {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.bi{
+    font-size: 1.2vw;
+}
+
+.RightSideButtons {
+    background-color: #292b2f;
+    width: 3vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ProfileImage {
+    border-radius: 50%;
+    background-color: #292b2f;
+    width: 3vw;
+    height: 2.5vw;
+    margin-left: .5vw;
+    margin-right: 1.2vw;
+}
+
+@media (max-width: 480px) {
+    .NavbarDiv {
+        height: 8vh; /* Adjust height based on content */
+        padding: 0 10px;
+    }
+
+    .NavbarDivs img {
+        height: 8vw; /* Smaller logo size for small screens */
+        margin-left: 1.2vw;
+    }
+
+    .NavbarDivs input {
+        height: 4vh;
+        padding: 0 10vw;
+        border-radius: 2vw;
+        margin-left: 5vw;
+        width: 35vw; /* Full width with some margin */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .NavbarDivs .bi-search {
+        font-size: 5vw; /* Adjust font size for better readability */
+        left: 7vw; /* Adjust position */
+    }
+
+    .NavbarRightDivs {
+        gap: 7vw; /* Smaller gap between items */
+    }
+
+    .bi {
+        font-size: 6vw; /* Larger icons for touch targets */
+    }
+
+    .RightSideButtons {
+        width: 2.5vw;
+        height: 2vw;
+    }
+
+    .ProfileImage {
+        width: 6vw;
+        height: 6vw;
+        margin-left: .5vw;
+        margin-right: 1vw;
+    }
+}
+
+/* For medium devices (tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .NavbarDiv {
+        height: 8vh; /* Adjust height based on content */
+        padding: 0 10px;
+    }
+
+    .NavbarDivs img {
+        height: 5vw; /* Smaller logo size for small screens */
+        margin-left: 1vw;
+    }
+
+    .NavbarDivs input {
+        height: 4vh;
+        padding: 0 5vw;
+        border-radius: 0.3vw;
+        margin-left: 2vw;
+        width: 40vw; /* Full width with some margin */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .NavbarDivs .bi-search {
+        font-size: 2.5vw; /* Adjust font size for better readability */
+        left: 3vw; /* Adjust position */
+    }
+
+    .NavbarRightDivs {
+        gap: 7vw; /* Smaller gap between items */
+    }
+
+    .bi {
+        font-size: 4vw; /* Larger icons for touch targets */
+    }
+
+    .RightSideButtons {
+        width: 2.5vw;
+        height: 2vw;
+    }
+
+    .ProfileImage {
+        width: 6vw;
+        height: 6vw;
+        margin-left: .5vw;
+        margin-right: 1vw;
+    }
+}
+
+/* For large devices (desktops, 769px and up) */
+@media (min-width: 769px) and (max-width:1440px) {
+    .NavbarDiv {
+        height: 8vh; /* Adjust height based on content */
+        padding: 0 10px;
+    }
+
+    .NavbarDivs img {
+        height: 4vw; /* Smaller logo size for small screens */
+        margin-left: .9vw;
+    }
+
+    .NavbarDivs input {
+        height: 3   vw;
+        padding: 0 4vw;
+        border-radius: 0.3vw;
+        margin-left: 2vw;
+        width: 40vw; /* Full width with some margin */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .NavbarDivs .bi-search {
+        font-size: 1.5vw; /* Adjust font size for better readability */
+        left: 3vw; /* Adjust position */
+    }
+
+    .NavbarRightDivs {
+        gap: 7vw; /* Smaller gap between items */
+    }
+
+    .bi {
+        font-size: 3vw; /* Larger icons for touch targets */
+    }
+
+    .RightSideButtons {
+        width: 2.5vw;
+        height: 2vw;
+    }
+
+    .ProfileImage {
+        width: 4vw;
+        height: 4vw;
+        margin-left: .5vw;
+        margin-right: 1vw;
+    }
+}
+
+
+/* For large devices (desktops, 769px and up) */
+@media (min-width: 1440px) and (max-width:2559px) {
+    .NavbarDiv {
+        height: 10vh; /* Adjust height based on content */
+        padding: 0 10px;
+    }
+
+    .NavbarDivs img {
+        height: 3vw; /* Smaller logo size for small screens */
+        margin-left: 1vw;
+    }
+
+    .NavbarDivs input {
+        height: 3vw;
+        padding: 0 3vw;
+        border-radius: 0.3vw;
+        margin-left: 2vw;
+        width: 25vw; /* Full width with some margin */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .NavbarDivs .bi-search {
+        font-size: 1.5vw; /* Adjust font size for better readability */
+        left: 3vw; /* Adjust position */
+    }
+
+    .NavbarRightDivs {
+        gap: 2vw; /* Smaller gap between items */
+    }
+
+    .bi {
+        font-size: 2vw; /* Larger icons for touch targets */
+    }
+
+    .RightSideButtons {
+        width: 2.5vw;
+        height: 2vw;
+    }
+
+    .ProfileImage {
+        width: 3vw;
+        height: 3vw;
+        margin-left: .5vw;
+        margin-right: 1vw;
+    }
+}
+
+
+/* For large devices (desktops, 769px and up) */
+@media (min-width: 2560px) {
+    .NavbarDiv {
+        height: 18vh; /* Adjust height based on content */
+        padding: 0 10px;
+    }
+
+    .NavbarDivs img {
+        height: 3vw; /* Smaller logo size for small screens */
+        margin-left: 1.2vw;
+    }
+
+    .NavbarDivs input {
+        height: 8vh;
+        padding: 0 4vw;
+        font-size: 1.5vw;
+        border-radius: 0.3vw;
+        margin-left: 2vw;
+        width: 40vw; /* Full width with some margin */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .NavbarDivs .bi-search {
+        font-size: 1.5vw; /* Adjust font size for better readability */
+        left: 3vw; /* Adjust position */
+    }
+
+    .NavbarRightDivs {
+        gap: 7vw; /* Smaller gap between items */
+    }
+
+    .bi {
+        font-size: 2vw; /* Larger icons for touch targets */
+    }
+
+    .RightSideButtons {
+        width: 2.5vw;
+        height: 2vw;
+    }
+
+    .ProfileImage {
+        width: 3vw;
+        height: 3vw;
+        margin-left: .5vw;
+        margin-right: 1vw;
+    }
+}
+

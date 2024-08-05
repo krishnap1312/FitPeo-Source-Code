@@ -1,0 +1,206 @@
+.side-menu {
+  width: 5.5vw;
+  height: 100%;
+  background-color: #1f2029;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 12vh;
+  left: 0;
+  padding-top: 1vw;
+  transition: width 0.3s;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 1vw 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #95979b;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #34495e;
+}
+
+.menu-item i {
+  font-size: 24px;
+  padding-left: 1vw;
+  margin-bottom: 5px;
+}
+
+.menu-item span {
+  display: block;
+  font-size: 12px;
+}
+
+.menu-item.active {
+  color: #3498db;
+}
+
+.menu-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #3498db;
+}
+
+.fa-sign-out {
+  margin-top: 35vh;
+}
+
+/* For small devices (phones, 320px to 480px) */
+@media (max-width: 480px) {
+  .side-menu {
+    width: 10vw; /* Wider for touch targets */
+    padding: 7vw;
+    padding-top: 8vh;
+    top: 4vh;
+  }
+
+  .menu-item.active::before {
+    left: -4.5vw;
+  }
+
+  .menu-item {
+    padding: 2vw;
+  }
+
+  .menu-item i {
+    font-size: 20px;
+  }
+
+  .menu-item span {
+    font-size: 10px;
+  }
+
+  .fa-sign-out {
+    margin-top: 10vh; /* Adjust based on available space */
+  }
+}
+
+/* For medium devices (tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .side-menu {
+    width: 8vw; /* Wider for touch targets */
+    padding-top: 4vh;
+    top: 4vh;
+  }
+
+  .menu-item.active::before {
+    left: 0vw;
+  }
+
+  .menu-item {
+    padding: 2vw;
+  }
+
+  .menu-item i {
+    font-size: 20px;
+  }
+
+  .menu-item span {
+    font-size: 10px;
+  }
+
+  .fa-sign-out {
+    margin-top: 10vh; /* Adjust based on available space */
+  }
+}
+
+/* For large devices (desktops, 769px to 1439px) */
+@media (min-width: 769px) and (max-width: 1439px) {
+  .side-menu {
+    width: 6vw; /* Wider for touch targets */
+    padding: 0;
+    padding-top: 8vh;
+    top: 4vh;
+  }
+
+  .menu-item.active::before {
+    left: 0vw;
+  }
+
+  .menu-item {
+    padding: 2vw;
+  }
+
+  .menu-item i {
+    font-size: 1.8vw;
+  }
+
+  .menu-item span {
+    font-size: 10px;
+  }
+
+  .fa-sign-out {
+    margin-top: 10vh; /* Adjust based on available space */
+  }
+}
+
+/* For extra-large devices (1440px and up) */
+@media (min-width: 1440px) and (max-width:2559px) {
+  .side-menu {
+    width: 5vw; /* Wider for touch targets */
+    padding: 0;
+    padding-top: 10vh;
+    top: 4vh;
+  }
+
+  .menu-item.active::before {
+    left: 0vw;
+  }
+
+  .menu-item {
+    padding: 2vw;
+  }
+
+  .menu-item i {
+    font-size: 1.5vw;
+  }
+
+  .menu-item span {
+    font-size: 10px;
+  }
+
+  .fa-sign-out {
+    margin-top: 10vh; /* Adjust based on available space */
+  }
+}
+/* For extra-large devices (1440px and up) */
+@media (min-width: 2560px) {
+  .side-menu {
+    width: 5vw; /* Wider for touch targets */
+    padding: 0;
+    padding-top: 14vh;
+    top: 4vh;
+  }
+
+  .menu-item.active::before {
+    left: 0vw;
+  }
+
+  .menu-item {
+    padding: 1vw;
+  }
+
+  .menu-item i {
+    font-size: 1.8vw;
+  }
+
+  .menu-item span {
+    font-size: 10px;
+  }
+
+  .fa-sign-out {
+    margin-top: .5vw; /* Adjust based on available space */
+  }
+}

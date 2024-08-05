@@ -1,0 +1,170 @@
+
+.barchart-wrapper {
+    height: 50vh;
+    background-color: #1f2029;
+    padding: 1vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 6.6vw;
+    margin-top: -1.2vw;
+    padding-bottom: 8vh;
+    width: 59vw;
+}
+
+.HeaderSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header{
+    color: white;
+    margin-left: 2vw;
+}
+
+.dropdown-toggle{
+    margin-right: 1vw;
+}
+@media (max-width: 480px) {
+    .barchart-wrapper {
+        height: 50vh;
+        padding: 0.5vw;
+        margin-left: 16vw;
+        margin-top: -3vh;
+        padding-bottom: 14vh;
+        width: 79.5vw;
+        border-radius: 1.5vw;
+    }
+
+    .HeaderSection {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 2vw 4vw;
+        gap: 2vw; /* Add space between Header and dropdown-toggle */
+    }
+
+    .Header {
+        margin-left: 1vw;
+        font-size: 1.2rem; /* Adjust font size for small screens */
+    }
+
+    .dropdown-toggle {
+        margin-left: 24vw;
+        font-size: 1.2rem; /* Adjust font size for small screens */
+    }
+}
+
+/* Responsive styles for medium screens (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .barchart-wrapper {
+        height: 60vh;
+        padding: 1vw;
+        margin-left: 10vw;
+        margin-top: -3vh;
+        padding-bottom: 15vh;
+        width: 86vw;
+        border-radius: 1vw;
+    }
+
+    .HeaderSection {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vw; /* Add space between Header and dropdown-toggle */
+        margin-top: 2vw;
+    }
+
+    .Header {
+        margin-left: 1.5vw;
+        font-size: 1.5rem; /* Adjust font size for medium screens */
+    }
+
+    .dropdown-toggle {
+        margin-left: 35vw;
+        font-size: 1.5rem; /* Adjust font size for medium screens */
+    }
+}
+
+/* Responsive styles for large screens (769px to 1440px) */
+@media (min-width: 769px) and (max-width: 1440px) {
+    .barchart-wrapper {
+        height: 50vh;
+        padding: 1vw;
+        margin-left: 7.2vw;
+        margin-top: -1.2vw;
+        padding-bottom: 7vh;
+        width: 59vw;
+    }
+
+    .HeaderSection {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2vh;
+        gap: 3vw; /* Add space between Header and dropdown-toggle */
+    }
+
+    .Header {
+        margin-left: 2vw;
+        font-size: 2.5vw; /* Adjust font size for large screens */
+    }
+
+    .dropdown-toggle {
+        margin-right: 1vw;
+        font-size: 1.6rem; /* Adjust font size for large screens */
+    }
+}
+
+/* Responsive styles for extra-large screens (1440px and up) */
+@media (min-width: 1440px) and (max-width:2559px) {
+    .barchart-wrapper {
+        height: 60vh;
+        padding: 1vw;
+        margin-left: 6.6vw;
+        margin-top: -1.5vw;
+        padding-bottom: 8vh;
+        width: 59vw;
+    }
+
+    .HeaderSection {
+        flex-direction: row;
+        align-items: center;
+        gap: 4vw; /* Add space between Header and dropdown-toggle */
+    }
+
+    .Header {
+        margin-left: 2vw;
+        font-size: 1.8rem; /* Adjust font size for extra-large screens */
+    }
+
+    .dropdown-toggle {
+        margin-right: 1vw;
+        font-size: 1.8rem; /* Adjust font size for extra-large screens */
+    }
+}
+
+/* Responsive styles for extra-large screens (1440px and up) */
+@media (min-width: 2560px) {
+    .barchart-wrapper {
+        height: 60vh;
+        padding: 1vw;
+        margin-left: 6.4vw;
+        margin-top: -1.5vw;
+        padding-bottom: 8vh;
+        width: 59vw;
+        border-radius: .5vw;
+    }
+
+    .HeaderSection {
+        flex-direction: row;
+        align-items: center;
+        gap: 4vw; /* Add space between Header and dropdown-toggle */
+    }
+
+    .Header {
+        margin-left: 2vw;
+        font-size: 1.5vw; /* Adjust font size for extra-large screens */
+    }
+
+    .dropdown-toggle {
+        margin-right: 1vw;
+        font-size: 1.8rem; /* Adjust font size for extra-large screens */
+    }
+}

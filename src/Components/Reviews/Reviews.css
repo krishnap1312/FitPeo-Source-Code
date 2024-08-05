@@ -1,0 +1,362 @@
+.ReviewsWrapper {
+  color: white;
+  width: 26vw;
+  height: 72vh;
+  border-radius: 1vw;
+  background-color: #1f2029;
+  margin-left: 69vw;
+  margin-top: -495px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.ReviewsContent {
+  height: calc(100vh - 2 * 40px - 2rem);
+  overflow-y: auto;
+  padding-left: 2vw;
+  border-radius: 1vw;
+  box-sizing: border-box;
+}
+
+.ReviewsContent::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ReviewsContent::-webkit-scrollbar-track {
+  background: #1f2029;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.ReviewsContent::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.CustomerHeading {
+  margin-left: 2vw;
+  padding-top: 2.2vh;
+  position: sticky;
+  top: 0;
+  background-color: #1f2029;
+  z-index: 1;
+}
+
+.ReviewHeader {
+  display: flex;
+  margin-top: 3vh;
+  align-items: center;
+}
+
+.CustomerImage {
+  width: 2vw;
+  margin-left: 0;
+}
+
+.CustomerName {
+  font-size: 1.6vw;
+  margin-left: 0.4vw;
+}
+
+.StarRating {
+  margin-top: 0.5vh;
+  color: #fede33;
+}
+
+.FeedbackText {
+  margin-top: 1vh;
+  font-size: 0.85vw;
+  color: #a8adc2;
+}
+
+
+@media (min-width:300px) and (max-width: 320px) {
+  .ReviewsWrapper {
+    width: 80vw; /* Maximize width */
+    margin-left: 16vw; /* Adjust margin for ultra-small screens */
+    margin-top: 1.5vh; /* Reset margin-top for ultra-small screens */
+    height: auto; /* Adjust height to auto for better fit */
+    border-radius: 2vw;
+  }
+
+  .CustomerHeading{
+    font-size: 6.5vw;
+  }
+
+  .CustomerName {
+    font-size: 4vw; /* Adjust font size */
+  }
+
+  .CustomerImage {
+    width: 10vw; /* Adjust image size */
+  }
+
+  .FeedbackText {
+    font-size: 3vw; /* Adjust font size */
+  }
+}
+
+
+@media (min-width:320px) and (max-width: 375px) {
+  .ReviewsWrapper {
+    width: 80vw; /* Maximize width */
+    margin-left: 16vw; /* Adjust margin for ultra-small screens */
+    margin-top: 3vh; /* Reset margin-top for ultra-small screens */
+    height: auto; /* Adjust height to auto for better fit */
+  }
+
+  .CustomerName {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .CustomerImage {
+    width: 3rem; /* Adjust image size */
+  }
+
+  .FeedbackText {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+@media (min-width: 374px) and (max-width: 425px) {
+  .ReviewsWrapper {
+    width: 79vw; /* Maximize width */
+    margin-left: 16vw; /* Adjust margin for ultra-small screens */
+    margin-top: 2vh; /* Reset margin-top for ultra-small screens */
+    height: auto; /* Adjust height to auto for better fit */
+  }
+
+  .CustomerName {
+    font-size: 4vw; /* Adjust font size */
+  }
+
+  .CustomerImage {
+    width: 10vw; /* Adjust image size */
+  }
+
+  .FeedbackText {
+    font-size: 3vw; /* Adjust font size */
+  }
+}
+
+@media (min-width: 425px) and (max-width: 480px) {
+  .ReviewsWrapper {
+    width: 79vw; /* Maximize width */
+    margin-left: 17vw; /* Adjust margin for ultra-small screens */
+    margin-top: 2vh; /* Reset margin-top for ultra-small screens */
+    height: auto; /* Adjust height to auto for better fit */
+  }
+
+  .CustomerName {
+    font-size: 4vw; /* Adjust font size */
+  }
+
+  .CustomerImage {
+    width: 10vw; /* Adjust image size */
+  }
+
+  .FeedbackText {
+    font-size: 3vw; /* Adjust font size */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .ReviewsWrapper {
+    width: 86vw; /* Maximize width */
+    margin-left: 10vw; /* Adjust margin for ultra-small screens */
+    margin-top: 3vh; /* Reset margin-top for ultra-small screens */
+    height: auto; /* Adjust height to auto for better fit */
+    border-radius: 2vw;
+  }
+
+  .CustomerName {
+    font-size: 3vw; /* Adjust font size */
+  }
+
+  .CustomerImage {
+    width: 6vw /* Adjust image size */
+  }
+
+  .FeedbackText {
+    font-size: 2vw; /* Adjust font size */
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 952px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Maximize width for very small screens */
+    margin-left: 72vw; /* Adjust margin for very small screens */
+    margin-top: -56vh; /* Adjust margin-top for very small screens */
+    height: 56vh;
+  }
+
+  .CustomerName {
+    font-size: 2vw; /* Use rem units for font size */
+  }
+
+  .CustomerImage {
+    width: 5vw; /* Use rem units for image size */
+  }
+
+  .FeedbackText {
+    font-size: 1.5vw; /* Use rem units for font size */
+  }
+
+  .CustomerHeading{
+    font-size: 2.5vw ;
+    
+  }
+}
+
+@media (min-width: 952px) and (max-width: 1184px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Maximize width for very small screens */
+    margin-left: 72vw; /* Adjust margin for very small screens */
+    margin-top: -54vh; /* Adjust margin-top for very small screens */
+    height: 53.5vh;
+  }
+
+  .CustomerName {
+    font-size: 2vw; /* Use rem units for font size */
+  }
+
+  .CustomerImage {
+    width: 5vw; /* Use rem units for image size */
+  }
+
+  .FeedbackText {
+    font-size: 1.5vw; /* Use rem units for font size */
+  }
+
+  .CustomerHeading{
+    font-size: 2.5vw ;
+    
+  }
+}
+
+
+@media (min-width: 1185px) and (max-width: 1283px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Maximize width for very small screens */
+    margin-left: 70.5vw; /* Adjust margin for very small screens */
+    margin-top: -69vh; /* Adjust margin-top for very small screens */
+    height: 69vh;
+  }
+
+  .CustomerName {
+    font-size: 1.5rem; /* Use rem units for font size */
+  }
+
+  .CustomerImage {
+    width: 4rem; /* Use rem units for image size */
+  }
+
+  .FeedbackText {
+    font-size: 1rem; /* Use rem units for font size */
+  }
+}
+
+@media (min-width: 1283px) and (max-width: 1439px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Maximize width for very small screens */
+    margin-left: 70vw; /* Adjust margin for very small screens */
+    height: 46vh;
+    margin-top: -46.5vh; /* Adjust margin-top for very small screens */
+  }
+
+  .CustomerName {
+    font-size: 1.5rem; /* Use rem units for font size */
+  }
+
+  .CustomerImage {
+    width: 4rem; /* Use rem units for image size */
+  }
+
+  .FeedbackText {
+    font-size: 1rem; /* Use rem units for font size */
+  }
+}
+
+
+
+@media (min-width: 1440px) and (max-width: 1518px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Further increase width for smaller screens */
+    margin-left: 69vw; /* Adjust margin for smaller screens */
+    margin-top: -50vh; /* Adjust margin-top for smaller screens */
+    height: 50vh;
+  }
+
+  .CustomerName {
+    font-size: 1.2vw; /* Further reduce font size */
+  }
+
+  .CustomerImage {
+    width: 3vw; /* Further increase image size */
+  }
+
+  .FeedbackText {
+    font-size: 1vw; /* Adjust font size */
+  }
+}
+
+
+
+@media (min-width: 1518px) and (max-width: 2559px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Further increase width for smaller screens */
+    margin-left: 69vw; /* Adjust margin for smaller screens */
+    margin-top: -56.5vh; /* Adjust margin-top for smaller screens */
+    height: 56.5vh;
+    border-radius: .5vw;
+  }
+
+  .CustomerName {
+    font-size: 1.2vw; /* Further reduce font size */
+  }
+
+  .CustomerImage {
+    width: 3vw; /* Further increase image size */
+  }
+
+  .CustomerHeading{
+    font-size: 1.5vw;
+    padding-top: 0vh;
+  }
+
+  .FeedbackText {
+    font-size: 1vw; /* Adjust font size */
+  }
+}
+
+
+@media (min-width: 2559px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Further increase width for smaller screens */
+    margin-left: 70vw; /* Adjust margin for smaller screens */
+    margin-top: -67vh; /* Adjust margin-top for smaller screens */
+    height: 67vh;
+    border-radius: .5vw;
+  }
+
+  .CustomerName {
+    font-size: 1.2vw; /* Further reduce font size */
+  }
+
+  .CustomerImage {
+    width: 3vw; /* Further increase image size */
+  }
+
+  .CustomerHeading{
+    font-size: 1.5vw;
+    padding-top: 0vh;
+  }
+
+  .FeedbackText {
+    font-size: 1vw; /* Adjust font size */
+  }
+}
+

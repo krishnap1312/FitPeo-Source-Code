@@ -1,0 +1,602 @@
+/* Container for recent orders */
+.recent-orders {
+    background-color: #1f2029;
+    padding: 20px;
+    border-radius: 0.5vw;
+    width: 59vw;
+    margin-top: -43vh;
+    overflow: hidden;
+    margin-left: 6.7vw;
+    border-radius: .5vw;
+}
+
+.recent-orders h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 1.25vw;
+}
+
+.orders-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    background-color: #1f2029;
+    color: white;
+    padding: 12px;
+    margin-top: -2vh;
+    border-bottom: 2px solid #444;
+    font-weight: bold;
+    align-items: center; /* Ensure vertical alignment in header */
+}
+
+.orders-header span {
+    text-align: left;
+    padding: 0 10px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center text */
+}
+
+.orders-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    align-items: center;
+    background-color: #1f2029;
+}
+
+.order-item span {
+    color: white;
+    text-align: left; /* Align text to left */
+    padding: 0 10px; /* Match header padding */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center text */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-right: 5px; /* Reduced gap between image and text */
+}
+
+.status {
+    text-align: left;
+    font-weight: bold;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center text */
+}
+
+.status.delivered {
+    color: #28a745; /* Green for delivered status */
+}
+
+.status.cancelled {
+    color: #dc3545; /* Red for cancelled status */
+}
+
+.order-item:hover {
+    background-color: #1f2029; /* Darker background on hover */
+}
+
+
+/* For screens up to 480px (phones) */
+@media (min-width:300px) and (max-width: 320px) {
+    .recent-orders {
+        width: 80vw; /* Maximize width */
+        padding: 5px; /* Minimize padding */
+        margin-left: 16vw; /* Adjust margin */
+        border-radius: 2vw;
+        margin-top: -21.5vw; /* Adjust margin */
+    }
+
+    .recent-orders h2 {
+        font-size: 1.2em; /* Further reduce font size for titles */
+        margin-left: 0.5vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 1vw; /* Minimize padding for header */
+    }
+
+    .orders-header span {
+        font-size: 3vw; /* Minimize font size in header */
+    }
+
+    .orders-body {
+        font-size: 0.8em; /* Minimize font size for body */
+    }
+
+    .order-item {
+        padding: 5px; /* Minimize padding for items */
+    }
+
+    .order-item span {
+        font-size: 2.2vw; /* Minimize font size for order item text */
+    }
+
+    .profile-pic{
+        height: 6vw;
+        width:  6vw;
+    }
+
+    .forSmallScreen {
+        justify-content: start; /* Align content to start */
+        text-align: left; /* Align text to left */
+    }
+}
+
+
+/* For screens up to 480px (phones) */
+@media (min-width:320px) and (max-width: 375px) {
+    .recent-orders {
+        width: 80vw; /* Maximize width */
+        padding: 5px; /* Minimize padding */
+        margin-left: 16vw; /* Adjust margin */
+        border-radius: 2vw;
+        margin-top: -14.5vw; /* Adjust margin */
+    }
+
+    .recent-orders h2 {
+        font-size: 1.2em; /* Further reduce font size for titles */
+        margin-left: 0.5vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 1vw; /* Minimize padding for header */
+    }
+
+    .orders-header span {
+        font-size: 3vw; /* Minimize font size in header */
+    }
+
+    .orders-body {
+        font-size: 0.8em; /* Minimize font size for body */
+    }
+
+    .order-item {
+        padding: 5px; /* Minimize padding for items */
+    }
+
+    .order-item span {
+        font-size: 2.2vw; /* Minimize font size for order item text */
+    }
+
+    .profile-pic{
+        height: 6vw;
+        width:  6vw;
+    }
+
+    .forSmallScreen {
+        justify-content: start; /* Align content to start */
+        text-align: left; /* Align text to left */
+    }
+}
+
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 374px) and (max-width: 425px) {
+    .recent-orders {
+        width: 79vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 16vw; /* Adjust margin */
+        margin-top: -18vw;
+        border-radius: 2vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 2.8vw; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .profile-container span{
+        font-size: 2.2vw !important;
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 2.5vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-pic{
+        height: 5vw;
+        width: 5vw;
+    }
+}
+
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 425px) and (max-width: 480px) {
+    .recent-orders {
+        width: 79vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 17vw; /* Adjust margin */
+        margin-top: -16vw;
+        border-radius: 2vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 2.8vw; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 2.8vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 2vw;
+    }
+
+    .profile-pic{
+        height: 5vw;
+        width: 5vw;
+    }
+}
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .recent-orders {
+        width: 86vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 10vw; /* Adjust margin */
+        margin-top: -27vh;
+        border-radius: 2vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 2.8vw; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 2vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 2vw;
+    }
+
+    .profile-pic{
+        height: 5vw;
+        width: 5vw;
+    }
+}
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 769px) and (max-width: 1184px) {
+    .recent-orders {
+        width: 59vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 7vw; /* Adjust margin */
+        margin-top: -45vh;
+        border-radius: 1vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 2vw; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 2vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 2vw;
+    }
+
+    .profile-pic{
+        height: 3vw;
+        width: 3vw;
+    }
+}
+
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 1185px) and (max-width: 1283px) {
+    .recent-orders {
+        width: 59vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 7vw; /* Adjust margin */
+        margin-top: -45vh;
+        border-radius: 1vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 1.5vw !important; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 1.5vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+
+    .profile-pic{
+        height: 5vw;
+        width: 5vw;
+    }
+}
+
+
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 1283px) and (max-width: 1439px) {
+    .recent-orders {
+        width: 59vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 7vw; /* Adjust margin */
+        margin-top: -45vh;
+        border-radius: 1vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 1.5vw !important; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 1.5vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+
+    .profile-pic{
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 1440px) and (max-width: 1518px) {
+    .recent-orders {
+        width: 59vw; /* Further reduce width */
+        margin-left: 6.5vw; /* Adjust margin */
+        margin-top: -14vh;
+        border-radius: .5vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 1.5vw !important; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 1vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 1vw;
+        font-weight: bold;
+    }
+
+    .profile-pic{
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 1518px) and (max-width: 2559px) {
+    .recent-orders {
+        width: 59vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 6.5vw; /* Adjust margin */
+        margin-top: -18vh;
+        border-radius: .5vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 1.5vw !important; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 1vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 1vw;
+        font-weight: bold;
+    }
+
+    .profile-pic{
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+
+/* For screens up to 768px (small tablets and large phones) */
+@media (min-width: 2560px) {
+    .recent-orders {
+        width: 59vw; /* Further reduce width */
+        padding: 10px; /* Further reduce padding */
+        margin-left: 6.5vw; /* Adjust margin */
+        margin-top: -18vh;
+        border-radius: .5vw;
+    }
+
+    .recent-orders h2 {
+        font-size: 1.5em; /* Further reduce font size for titles */
+        margin-left: 0.75vw; /* Adjust margin */
+    }
+
+    .orders-header {
+        padding: 8px; /* Adjust padding for header */
+    }
+
+    .orders-header span {
+        font-size: 1.5vw !important; /* Further reduce font size in header */
+    }
+
+    .orders-body {
+        font-size: 1em; /* Further reduce font size for body */
+    }
+
+    .order-item {
+        padding: 8px; /* Further reduce padding for items */
+    }
+
+    .order-item span {
+        font-size: 1vw; /* Further reduce font size for order item text */
+    }
+
+    .profile-container span{
+        font-size: 1vw;
+        font-weight: bold;
+    }
+
+    .profile-pic{
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
