@@ -9,13 +9,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => (
     <div>
-        <BrowserRouter>
+        {/* <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home></Home>}/>
                 <Route path='/fitpeo' element={<Home></Home>}/>
             </Routes>
-        </BrowserRouter>
-        {/* <Home></Home> */}
+        </BrowserRouter> */}
+        <Home></Home>
     </div>
 );
     

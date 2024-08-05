@@ -1,5 +1,10 @@
 import React from 'react';
 import styles from './ProgressCircle.module.css';
+import parcelImage from './parcel.png';
+import shoppingBagImage from './shopping-bag.png';
+import returnImage from './Return.png';
+import increaseImage from './increase.png';
+
 
 function Graph({ percentage = 0 }) {
     const validPercentage = Math.min(100, Math.max(0, percentage));
@@ -13,22 +18,22 @@ function Graph({ percentage = 0 }) {
         <div className={styles.DashboardTitle}  ><h1 >Dashboard</h1></div>
             <div className={styles.container}>
                 <div className={styles.card}>
-                    <img className={styles.icon} src={process.env.PUBLIC_URL + "parcel.png"} alt="" />
+                    <img className={styles.icon} src={parcelImage} alt="" />
                     <h3 className={styles.title}>Total Orders</h3>
                     <h1 className={styles.number}>75 <span className={styles.decrease}> 🔽 2%</span></h1>
                 </div>
                 <div className={styles.card}>
-                    <img className={styles.icon} src={process.env.PUBLIC_URL + "shopping-bag.png"} alt="" />
+                    <img className={styles.icon} src={shoppingBagImage} alt="" />
                     <h3 className={styles.title}>Total Delivered</h3>
                     <h1 className={styles.number}>70 <span className={styles.increase}> 🔼 2%</span></h1>
                 </div>
                 <div className={styles.card}>
-                    <img className={styles.icon} src={process.env.PUBLIC_URL + "Return.png"} alt="" />
+                    <img className={styles.icon} src={returnImage} alt="" />
                     <h3 className={styles.title}>Total Cancelled</h3>
                     <h1 className={styles.number}>75 <span className={styles.increase}> 🔼 2%</span></h1>
                 </div>
                 <div className={styles.card}>
-                    <img className={styles.icon} src={"increase.png"} alt="" />
+                    <img className={styles.icon} src={increaseImage} alt="" />
                     <h3 className={styles.title}>Total Revenue</h3>
                     <h1 className={styles.number}>75 <span className={styles.increase}> 🔼 $12k</span></h1>
                 </div>

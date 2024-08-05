@@ -185,12 +185,12 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 952px) {
+@media (min-width: 769px) and (max-width: 1184px) {
   .ReviewsWrapper {
     width: 26vw; /* Maximize width for very small screens */
     margin-left: 72vw; /* Adjust margin for very small screens */
-    margin-top: -56vh; /* Adjust margin-top for very small screens */
-    height: 56vh;
+    margin-top: -52vh; /* Adjust margin-top for very small screens */
+    height: 52vh;
   }
 
   .CustomerName {
@@ -211,12 +211,38 @@
   }
 }
 
-@media (min-width: 952px) and (max-width: 1184px) {
+@media (min-width: 769px) and (max-width: 1184px) and (min-height: 850px) and (max-height: 860px){
   .ReviewsWrapper {
     width: 26vw; /* Maximize width for very small screens */
     margin-left: 72vw; /* Adjust margin for very small screens */
-    margin-top: -54vh; /* Adjust margin-top for very small screens */
-    height: 53.5vh;
+    margin-top: -52vh; /* Adjust margin-top for very small screens */
+    height: 52vh;
+  }
+
+  .CustomerName {
+    font-size: 2vw; /* Use rem units for font size */
+  }
+
+  .CustomerImage {
+    width: 5vw; /* Use rem units for image size */
+  }
+
+  .FeedbackText {
+    font-size: 1.5vw; /* Use rem units for font size */
+  }
+
+  .CustomerHeading{
+    font-size: 2.5vw ;
+    
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1184px) and (min-height: 600px) and (max-height: 800px){
+  .ReviewsWrapper {
+    width: 26vw; /* Maximize width for very small screens */
+    margin-left: 72vw; /* Adjust margin for very small screens */
+    margin-top: -70vh; /* Adjust margin-top for very small screens */
+    height: 70vh;
   }
 
   .CustomerName {
@@ -282,12 +308,33 @@
 
 
 
-@media (min-width: 1440px) and (max-width: 1518px) {
+@media (min-width: 1440px) and (max-width: 1518px) and (min-height: 600px) and (max-height: 850px) {
   .ReviewsWrapper {
     width: 26vw; /* Further increase width for smaller screens */
     margin-left: 69vw; /* Adjust margin for smaller screens */
-    margin-top: -50vh; /* Adjust margin-top for smaller screens */
-    height: 50vh;
+    margin-top: -49vh; /* Adjust margin-top for smaller screens */
+    height: 49vh;
+  }
+
+  .CustomerName {
+    font-size: 1.2vw; /* Further reduce font size */
+  }
+
+  .CustomerImage {
+    width: 3vw; /* Further increase image size */
+  }
+
+  .FeedbackText {
+    font-size: 1vw; /* Adjust font size */
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1518px) and (min-height: 850px) and (max-height: 860px){
+  .ReviewsWrapper {
+    width: 26vw; /* Further increase width for smaller screens */
+    margin-left: 69vw; /* Adjust margin for smaller screens */
+    margin-top: -47vh; /* Adjust margin-top for smaller screens */
+    height: 47vh;
   }
 
   .CustomerName {
@@ -309,8 +356,36 @@
   .ReviewsWrapper {
     width: 26vw; /* Further increase width for smaller screens */
     margin-left: 69vw; /* Adjust margin for smaller screens */
-    margin-top: -56.5vh; /* Adjust margin-top for smaller screens */
-    height: 56.5vh;
+    margin-top: -53.5vh; /* Adjust margin-top for smaller screens */
+    height: 53.5vh;
+    border-radius: .5vw;
+  }
+
+  .CustomerName {
+    font-size: 1.2vw; /* Further reduce font size */
+  }
+
+  .CustomerImage {
+    width: 3vw; /* Further increase image size */
+  }
+
+  .CustomerHeading{
+    font-size: 1.5vw;
+    padding-top: 0vh;
+  }
+
+  .FeedbackText {
+    font-size: 1vw; /* Adjust font size */
+  }
+}
+
+
+@media (min-width: 1518px) and (max-width: 2559px) and (min-height: 800px) and (max-height: 860px){
+  .ReviewsWrapper {
+    width: 26vw; /* Further increase width for smaller screens */
+    margin-left: 69vw; /* Adjust margin for smaller screens */
+    margin-top: -48vh; /* Adjust margin-top for smaller screens */
+    height: 48vh;
     border-radius: .5vw;
   }
 
@@ -339,6 +414,33 @@
     margin-left: 70vw; /* Adjust margin for smaller screens */
     margin-top: -67vh; /* Adjust margin-top for smaller screens */
     height: 67vh;
+    border-radius: .5vw;
+  }
+
+  .CustomerName {
+    font-size: 1.2vw; /* Further reduce font size */
+  }
+
+  .CustomerImage {
+    width: 3vw; /* Further increase image size */
+  }
+
+  .CustomerHeading{
+    font-size: 1.5vw;
+    padding-top: 0vh;
+  }
+
+  .FeedbackText {
+    font-size: 1vw; /* Adjust font size */
+  }
+}
+
+@media (min-width: 2559px) and (min-height:1400px) {
+  .ReviewsWrapper {
+    width: 26vw; /* Further increase width for smaller screens */
+    margin-left: 70vw; /* Adjust margin for smaller screens */
+    margin-top: -36.5vh; /* Adjust margin-top for smaller screens */
+    height: 36.5vh;
     border-radius: .5vw;
   }
 

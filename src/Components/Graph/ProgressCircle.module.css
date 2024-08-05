@@ -1,5 +1,5 @@
 .GraphDiv {
-  margin: 5vw 0 0 5vw;
+  margin: 5vh 0 0 5vw;
 }
 
 .DashboardTitle {
@@ -187,7 +187,7 @@
 /* Small devices (phones, 320px to 480px) */
 @media (min-width:320px) and (max-width: 480px) {
     .GraphDiv {
-      margin: 6vw 0 0 12vw;
+      margin: 6vh 0 0 12vw;
     }
   
     .DashboardTitle {
@@ -297,7 +297,7 @@
 /* Small devices (phones, 320px to 480px) */
 @media (min-width:480px)and (max-width: 481px) {
   .GraphDiv {
-    margin: 12vw 0 0 12vw;
+    margin: 6vh 0 0 12vw;
   }
 
   .DashboardTitle {
@@ -406,7 +406,7 @@
 /* Medium devices (tablets, 481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .GraphDiv {
-        margin: 8vw 0 0 8vw;
+        margin: 5vh 0 0 8vw;
         padding-top: 2vw;
       }
     
@@ -516,7 +516,7 @@
 /* Large devices (desktops, 769px and up) */
 @media (min-width: 769px) and (max-width:1024px) {
   .GraphDiv {
-    margin: 5vw 0 0 5vw;
+    margin: 5vh 0 0 5vw;
     padding-top: 2vw;
   }
 
@@ -615,7 +615,7 @@
 /* Large devices (desktops, 769px and up) */
 @media (min-width: 1024px) and (max-width:1293px) {
   .GraphDiv {
-    margin: 5vw 0 0 5.5vw;
+    margin: 5vh 0 0 5.5vw;
   }
 
   .DashboardTitle {
@@ -715,7 +715,7 @@
 /* Large devices (desktops, 769px and up) */
 @media (min-width: 1293px) and (max-width:1440px) {
   .GraphDiv {
-    margin: 2vw 0 0 5.5vw;
+    margin: 5vh 0 0 5.5vw;
   }
 
   .DashboardTitle {
@@ -816,7 +816,7 @@
 /* Large devices (desktops, 769px and up) */
 @media (min-width: 1440px) and (max-width:2559px) {
   .GraphDiv {
-    margin: .5vw 0 0 5vw;
+    margin: 5vh 0 0 5vw;
   }
 
   .DashboardTitle {
@@ -913,7 +913,7 @@
 
 @media (min-width: 2560px) {
     .GraphDiv {
-      margin: 5vw 0 0 5vw;
+      margin: 14vh 0 0 5vw;
     }
   
     .DashboardTitle {
@@ -930,7 +930,7 @@
     .card {
       margin: 0.5vw;
       padding: 1vw;
-      height: 10vw;
+      height: 20vh;
       width: 14vw;
     }
   
@@ -953,6 +953,7 @@
   
     .textContainer {
       margin-left: -3vw;
+      margin-top: 1vw;
       margin-right: 10vw;
     }
   
@@ -984,12 +985,12 @@
     .footerText {
       font-size: .6vw !important;
       left: 6vw;
-      top: 4vw;
+      top: 4.5vh;
     }
   
     .combinedContainer {
       width: 26vw;
-      height: 10vw;
+      height: 20vh;
       margin: 0 0 0 4vw;
       border-radius: .5vw !important;
     }
